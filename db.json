@@ -1,0 +1,21 @@
+{
+  "countries": [
+    {
+      "id": "1",
+      "name": "Colombia"
+    }
+  ],
+  "regions": [],
+  "cities": [],
+  "companies": [
+    {
+      "id": "1",
+      "name": "nose",
+      "UKNiu": "werewr",
+      "address": "erewer",
+      "email": "werwerer",
+      "countryId": null
+    }
+  ],
+  "branches": []
+}
