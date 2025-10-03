@@ -1,5 +1,5 @@
-import { postCities, patchCities } from '../../../Apis/city/cityApi.js';
-import { getRegions } from '../../../Apis/region/regionApi.js';
+import { postCities, patchCities } from '../../../Apis/city/cityAPI.js';
+import { getRegions } from '../../../Apis/region/regionAPI.js';
 
 export class RegCity extends HTMLElement {
     constructor() {

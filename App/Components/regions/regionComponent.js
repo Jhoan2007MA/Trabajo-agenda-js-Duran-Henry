@@ -5,7 +5,7 @@ export class RegionComponent extends HTMLElement {
     constructor() {
         super();
         this.innerHTML = `
-            <style>@import "./App/Components/regions/regionStyle.css";</style>
+            <style>@import "./App/Components/region/regionStyle.css";</style>
             <ul class="nav nav-tabs">
                 <li class="nav-item"><a class="nav-link active mnuregion" href="#" data-verocultar='["#regRegion",["#lstRegion"]]'>Registrar Región</a></li>
                 <li class="nav-item"><a class="nav-link mnuregion" href="#" data-verocultar='["#lstRegion",["#regRegion"]]'>Listado de Regiones</a></li>

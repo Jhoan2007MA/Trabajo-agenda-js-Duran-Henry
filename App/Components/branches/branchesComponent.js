@@ -1,5 +1,5 @@
-import './lstBranch.js';
-import './regBranch.js';
+import './lstBranches.js';
+import './regBranches.js';
 
 export class BranchComponent extends HTMLElement {
     constructor() {

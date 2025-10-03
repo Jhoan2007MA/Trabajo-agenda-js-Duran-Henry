@@ -1,8 +1,8 @@
-import { getBranches, deleteBranches, patchBranches } from '../../../Apis/branch/branchApi.js';
-import { getCountries } from '../../../Apis/country/countryApi.js';
-import { getCompanies } from '../../../Apis/company/companyApi.js';
+import { getBranches, deleteBranches, patchBranches } from '../../../Apis/branches/branchAPI.js';
+import { getCountries } from '../../../Apis/country/countryAPI.js';
+import { getCompanies } from '../../../Apis/company/companyAPI.js';
 
-export class LstBranch extends HTMLElement {
+export class LstBranches extends HTMLElement {
     constructor() {
         super();
         this.mostrarPagina();

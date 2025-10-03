@@ -1,4 +1,4 @@
-import { postCountries, patchCountries, deleteCountries } from '../../../Apis/country/countryApi.js';
+import { postCountries, patchCountries, deleteCountries } from '../../../Apis/country/countryAPI.js';
 
 export class RegCountry extends HTMLElement {
     constructor() {

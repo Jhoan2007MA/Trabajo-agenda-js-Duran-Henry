@@ -1,5 +1,5 @@
-import { getCities, deleteCities, patchCities } from '../../../Apis/city/cityApi.js';
-import { getRegions } from '../../../Apis/region/regionApi.js';
+import { getCities, deleteCities, patchCities } from '../../../Apis/city/cityAPI.js';
+import { getRegions } from '../../../Apis/region/regionAPI.js';
 
 export class LstCity extends HTMLElement {
     constructor() {

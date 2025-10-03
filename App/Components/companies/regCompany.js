@@ -1,5 +1,5 @@
-import { postCompanies, patchCompanies } from '../../../Apis/company/companyApi.js';
-import { getCountries } from '../../../Apis/country/countryApi.js';
+import { postCompanies, patchCompanies } from '../../../Apis/company/companyAPI.js';
+import { getCountries } from '../../../Apis/country/countryAPI.js';
 
 export class RegCompany extends HTMLElement {
     constructor() {

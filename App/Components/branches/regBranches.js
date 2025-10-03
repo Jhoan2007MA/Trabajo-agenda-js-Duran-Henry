@@ -1,8 +1,8 @@
-import { postBranches, patchBranches } from '../../../Apis/branch/branchApi.js';
-import { getCountries } from '../../../Apis/country/countryApi.js';
-import { getCompanies } from '../../../Apis/company/companyApi.js';
+import { postBranches, patchBranches } from '../../../Apis/branches/branchAPI.js';
+import { getCountries } from '../../../Apis/country/countryAPI.js';
+import { getCompanies } from '../../../Apis/company/companyAPI.js';
 
-export class RegBranch extends HTMLElement {
+export class RegBranches extends HTMLElement {
     constructor() {
         super();
         this.render();
@@ -267,4 +267,4 @@ export class RegBranch extends HTMLElement {
     }
 }
 
-customElements.define('reg-branch', RegBranch);
+customElements.define('reg-branches', RegBranches);

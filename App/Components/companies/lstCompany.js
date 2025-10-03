@@ -1,5 +1,5 @@
-import { getCompanies, deleteCompanies, patchCompanies } from '../../../Apis/company/companyApi.js';
-import { getCountries } from '../../../Apis/country/countryApi.js';
+import { getCompanies, deleteCompanies, patchCompanies } from '../../../Apis/company/companyAPI.js';
+import { getCountries } from '../../../Apis/country/countryAPI.js';
 
 export class LstCompany extends HTMLElement {
     constructor() {

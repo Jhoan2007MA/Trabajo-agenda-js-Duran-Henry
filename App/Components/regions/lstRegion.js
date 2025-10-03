@@ -1,5 +1,5 @@
-import { getRegions, deleteRegions, patchRegions } from '../../../Apis/region/regionApi.js';
-import { getCountries } from '../../../Apis/country/countryApi.js';
+import { getRegions, deleteRegions, patchRegions } from '../../../Apis/region/regionAPI.js';
+import { getCountries } from '../../../Apis/country/countryAPI.js';
 
 export class LstRegion extends HTMLElement {
     constructor() {

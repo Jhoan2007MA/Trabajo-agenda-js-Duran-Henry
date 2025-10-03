@@ -1,5 +1,5 @@
-import { getCities, deleteCities, patchCities } from '../../../Apis/city/cityApi.js';
-import { getRegions } from '../../../Apis/region/regionApi.js';
+import { getCities, deleteCities, patchCities } from '../../../Apis/city/cityAPI.js';
+import { getRegions } from '../../../Apis/region/regionAPI.js';
 
 export class LstCity extends HTMLElement {
     constructor() {
@@ -9,7 +9,6 @@ export class LstCity extends HTMLElement {
     }
 
     async mostrarPagina() {
-        //  tabla HTML
         this.innerHTML = `
             <div class="card mt-3">
                 <div class="card-header">Listado de Ciudades</div>
@@ -30,8 +29,6 @@ export class LstCity extends HTMLElement {
                 </div>
             </div>
         `;
-        
-        // Cargar las ciudades
         this.loadCities();
     }
 
@@ -47,7 +44,6 @@ export class LstCity extends HTMLElement {
             if (cities && cities.length > 0) {
                 let filas = '';
                 cities.forEach(city => {
-                    // Buscar el nombre de la región
                     const region = regions.find(r => r.id === city.regionId);
                     const regionName = region ? region.name : 'No asignada';
                     
@@ -90,10 +86,8 @@ export class LstCity extends HTMLElement {
             ]);
             const city = cities.find(c => c.id == id);
             
-            // Encontrar la fila correspondiente en la tabla
             const fila = this.querySelector(`tr[data-id="${id}"]`);
             if (fila) {
-                // Cambiar las celdas a modo edición
                 const celdaNombre = fila.querySelector('td:nth-child(2)');
                 const celdaRegion = fila.querySelector('td:nth-child(3)');
                 const nombreOriginal = city.name;
@@ -116,7 +110,6 @@ export class LstCity extends HTMLElement {
                     </select>
                 `;
                 
-                // Cambiar los botones de acción
                 const celdaAcciones = fila.querySelector('td:nth-child(4)');
                 celdaAcciones.innerHTML = `
                     <button class="btn btn-sm btn-success save-city" data-id="${id}">Guardar</button>
@@ -159,7 +152,6 @@ export class LstCity extends HTMLElement {
     }
 
     cancelEdit(id) {
-        // Recargar la tabla para volver al estado normal
         this.loadCities();
     }
 
@@ -194,5 +186,6 @@ export class LstCity extends HTMLElement {
         });
     }
 }
+
 
 customElements.define('lst-city', LstCity);

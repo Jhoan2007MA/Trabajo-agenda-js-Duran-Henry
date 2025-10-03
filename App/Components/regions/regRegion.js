@@ -1,5 +1,5 @@
-import { postRegions, patchRegions } from '../../../Apis/region/regionApi.js';
-import { getCountries } from '../../../Apis/country/countryApi.js';
+import { postRegions, patchRegions } from '../../../Apis/region/regionAPI.js';
+import { getCountries } from '../../../Apis/country/countryAPI.js';
 
 export class RegRegion extends HTMLElement {
     constructor() {
